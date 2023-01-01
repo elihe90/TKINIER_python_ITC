@@ -1,0 +1,17 @@
+import tkinter as tk
+from tkinter import *
+root=Tk()
+root.title("class puthon gui")
+w=Frame(root)
+w.pack(side=BOTTOM)
+bottomframe = Frame(root)
+bottomframe.pack(side = BOTTOM )
+redbutton = Button(w, text = 'Red', fg ='red')
+redbutton.pack(side=LEFT)
+E=Entry(w,width=25).pack(side=RIGHT)
+lb=Listbox(root)
+lb.insert(1,"python")
+lb.insert(2,"c#")
+lb.insert(3,'asp')
+lb.pack()
+root.mainloop()
